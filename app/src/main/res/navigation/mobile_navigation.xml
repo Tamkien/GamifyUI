@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kienct.gamifyui.ui.home.HomeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_most_played"
+        android:name="com.kienct.gamifyui.ui.most_played.MostPlayedFragment"
+        android:label="@string/most_played"
+        tools:layout="@layout/fragment_most_played" />
+
+    <fragment
+        android:id="@+id/nav_best_offer_games"
+        android:name="com.kienct.gamifyui.ui.best_offer_games.BestOfferGamesFragment"
+        android:label="@string/best_offer_games"
+        tools:layout="@layout/fragment_best_offer_games" />
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.kienct.gamifyui.ui.favourite.FavouriteFragment"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.kienct.gamifyui.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

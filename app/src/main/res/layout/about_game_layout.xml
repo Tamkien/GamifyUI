@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_image" />
+
+
+
+    <TextView
+        android:id="@+id/textView21"
+        style="@style/bigText"
+        android:text="@string/battlefield_v_firestrome"
+        android:textSize="42sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView22"
+        style="@style/smallText"
+        android:textColor="@color/red"
+        android:text="@string/ea_games"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_marginTop="8dp"
+        style="@style/descriptionText"
+        android:layout_width="0px"
+        android:text="@string/this_review_focuses_solely_on_the_newly_released_firestorm_battle_royale_mode_to_see_what_we_thought_of_the_single_player_and_multiplayer_sides_of_battlefield_v_check_out_those_reviews_n_nbetter_late_than_never_battlefield_v_has_patched_in_its_take_on_the_battle_royale_genre_firestorm_mode_takes_the_large_environments_realistic_weapons_and_vehicle_warfare_battlefield_players_know_and_love_and_injects_them_into_a_beautiful_map_however_what_firestorm_doesn_t_do_is_move_the_needle_in_terms_of_originality_and_innovation_and_it_fails_to_come_up_with_hooks_that_keep_me_coming_back_to_play_player_unknown_s_battlegrounds_made_the_first_waves_in_the_genre_with_its_realistic_style_and_firestorm_feels_like_a_more_polished_but_less_distinctive_version_of_that_same_idea"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView24"
+        style="@style/smallText"
+        android:text="@string/snapshot"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+       style="@style/smallText"
+        android:textColor="@color/red"
+        android:text="@string/see_all"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/snapshot_view"
+        android:layout_marginTop="8dp"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
