@@ -1,3 +1,3 @@
 package com.kienct.gamifyui.ui.home
 
-class Shortcut (var imgSrc : Int, var desc : String)
+class Shortcut(var imgSrc: Int, var desc: String)

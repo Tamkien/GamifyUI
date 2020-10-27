@@ -12,7 +12,7 @@ import com.kienct.gamifyui.R
 class MostPlayedFragment : Fragment() {
 
     private lateinit var view1: RecyclerView
-    private val mostPlayed : MutableList<Int> = ArrayList()
+    private val mostPlayed: MutableList<Int> = ArrayList()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,6 +24,7 @@ class MostPlayedFragment : Fragment() {
         setAdapter()
         return view
     }
+
     private fun setAdapter() {
         val mostPlayedAdapter = MostPlayedAdapter(mostPlayed)
         view1.layoutManager = LinearLayoutManager(view?.context)

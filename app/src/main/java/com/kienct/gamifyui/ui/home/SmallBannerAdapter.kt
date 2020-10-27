@@ -10,7 +10,8 @@ import com.kienct.gamifyui.R
 class SmallBannerAdapter(private val items: MutableList<Int>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.small_banner_layout, parent, false)
+        val v =
+            LayoutInflater.from(parent.context).inflate(R.layout.small_banner_layout, parent, false)
         return ViewHolder(v)
     }
 

@@ -4,8 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.RatingBar
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kienct.gamifyui.R
 
@@ -28,4 +26,5 @@ class MostPlayedAdapter(private val mostPlayed: MutableList<Int>) :
 
     internal class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         var img: ImageView = v.findViewById(R.id.imageView12)
-    }}
+    }
+}

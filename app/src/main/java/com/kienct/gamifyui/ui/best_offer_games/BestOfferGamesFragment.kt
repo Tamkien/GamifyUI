@@ -24,6 +24,7 @@ class BestOfferGamesFragment : Fragment() {
         setAdapter()
         return view
     }
+
     private fun setAdapter() {
         val bestOfferGamesAdapter = BestOfferGamesAdapter(bestOfferGames)
         view1.layoutManager = LinearLayoutManager(view?.context)
@@ -31,10 +32,45 @@ class BestOfferGamesFragment : Fragment() {
     }
 
     private fun addList() {
-        bestOfferGames.add(BestOfferGame("Call of Duty WWII", "Call of Duty: WWII is a first-person shooter video game developed by Sledgehammer Games and published by Activision.", R.drawable.codwwii_logo, 5f))
-        bestOfferGames.add(BestOfferGame("Battlefield 1", "Battlefield 1 is a first-person shooter video game developed by EA DICE and published by Electronic Arts.", R.drawable.battlefield_logo, 4f))
-        bestOfferGames.add(BestOfferGame("Grand Theft Auto V", "Grand Theft Auto V is an action-adventure video game developed by Rockstar North and published by Rockstar Games.", R.drawable.gtav_logo, 3f))
-        bestOfferGames.add(BestOfferGame("Call of Duty Black OPS 3", "Call of Duty: Black Ops III is a cyberpunk first-person shooter video game, developed by Treyarch and published by Activision.", R.drawable.codbo_logo, 4f))
-        bestOfferGames.add(BestOfferGame("Farcry 5", "Far Cry 5 is a first-person shooter video game developed by Ubisoft Montreal and Ubisoft Toronto and published by Ubisoft.", R.drawable.farcry_logo, 5f))
+        bestOfferGames.add(
+            BestOfferGame(
+                "Call of Duty WWII",
+                "Call of Duty: WWII is a first-person shooter video game developed by Sledgehammer Games and published by Activision.",
+                R.drawable.codwwii_logo,
+                5f
+            )
+        )
+        bestOfferGames.add(
+            BestOfferGame(
+                "Battlefield 1",
+                "Battlefield 1 is a first-person shooter video game developed by EA DICE and published by Electronic Arts.",
+                R.drawable.battlefield_logo,
+                4f
+            )
+        )
+        bestOfferGames.add(
+            BestOfferGame(
+                "Grand Theft Auto V",
+                "Grand Theft Auto V is an action-adventure video game developed by Rockstar North and published by Rockstar Games.",
+                R.drawable.gtav_logo,
+                3f
+            )
+        )
+        bestOfferGames.add(
+            BestOfferGame(
+                "Call of Duty Black OPS 3",
+                "Call of Duty: Black Ops III is a cyberpunk first-person shooter video game, developed by Treyarch and published by Activision.",
+                R.drawable.codbo_logo,
+                4f
+            )
+        )
+        bestOfferGames.add(
+            BestOfferGame(
+                "Farcry 5",
+                "Far Cry 5 is a first-person shooter video game developed by Ubisoft Montreal and Ubisoft Toronto and published by Ubisoft.",
+                R.drawable.farcry_logo,
+                5f
+            )
+        )
     }
 }

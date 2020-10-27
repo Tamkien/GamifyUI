@@ -33,6 +33,6 @@ class BestOfferGamesAdapter(private val bestOfferGame: MutableList<BestOfferGame
         var img: ImageView = v.findViewById(R.id.imageView10)
         var r: RatingBar = v.findViewById(R.id.ratingBar)
         var desc: TextView = v.findViewById(R.id.textView20)
-        var name : TextView = v.findViewById(R.id.textView19)
+        var name: TextView = v.findViewById(R.id.textView19)
     }
 }

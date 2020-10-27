@@ -37,16 +37,20 @@ class HomeFragment : Fragment() {
 
     private fun setAdapter() {
         val slideAdapter = SlideAdapter(slider)
-        view1.layoutManager =  LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
+        view1.layoutManager =
+            LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
         view1.adapter = slideAdapter
         val shortcutAdapter = ShotcutAdapter(recyclerView1)
-        view2.layoutManager =  LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
+        view2.layoutManager =
+            LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
         view2.adapter = shortcutAdapter
         val smallBannerAdapter = SmallBannerAdapter(recyclerView2)
-        view3.layoutManager =  LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
+        view3.layoutManager =
+            LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
         view3.adapter = smallBannerAdapter
         val secondRowAdapter = SecondRowAdapter(recyclerView3)
-        view4.layoutManager = LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
+        view4.layoutManager =
+            LinearLayoutManager(view?.context, LinearLayoutManager.HORIZONTAL, false)
         view4.adapter = secondRowAdapter
     }
 

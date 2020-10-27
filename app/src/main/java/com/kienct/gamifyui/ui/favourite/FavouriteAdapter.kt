@@ -31,6 +31,6 @@ class FavouriteAdapter(private val favourite: MutableList<FavouriteGame>) :
     internal class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         var img: ImageView = v.findViewById(R.id.imageView17)
         var r: RatingBar = v.findViewById(R.id.ratingBar2)
-        var name : TextView = v.findViewById(R.id.textView28)
+        var name: TextView = v.findViewById(R.id.textView28)
     }
 }
