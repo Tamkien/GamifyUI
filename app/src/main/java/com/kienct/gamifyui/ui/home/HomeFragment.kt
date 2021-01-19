@@ -24,7 +24,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val view: View = inflater.inflate(R.layout.fragment_home, container, false)
         view1 = view.findViewById(R.id.sliderView)
         view2 = view.findViewById(R.id.recyclerView2)
