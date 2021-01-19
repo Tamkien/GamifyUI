@@ -18,7 +18,7 @@ class AboutGameFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val view: View = inflater.inflate(R.layout.about_game_layout, container, false)
         view1 = view.findViewById(R.id.snapshot_view)
         addList()

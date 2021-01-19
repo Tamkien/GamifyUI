@@ -16,7 +16,7 @@ class FavouriteFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val view: View = inflater.inflate(R.layout.fragment_favourite, container, false)
         view1 = view.findViewById(R.id.favourite_container)
         addList()
