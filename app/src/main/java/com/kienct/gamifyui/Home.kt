@@ -20,15 +20,15 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        setSupportActionBar(toolbar)//to put the hamburger menu icon into the toolbar
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout) //the drawer's layout. Style goes here.
+        val navView: NavigationView = findViewById(R.id.nav_view) //this is the navigation drawer.
+        val navController = findNavController(R.id.nav_host_fragment) //this controller connects to mobile_navigation, which contains menu items
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
-            setOf(
+            setOf(//these are the drawer's menu items IDs.
                 R.id.nav_home,
                 R.id.nav_most_played,
                 R.id.nav_best_offer_games,
