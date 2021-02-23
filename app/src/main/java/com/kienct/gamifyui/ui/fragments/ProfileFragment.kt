@@ -1,4 +1,4 @@
-package com.kienct.gamifyui.ui.profile
+package com.kienct.gamifyui.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

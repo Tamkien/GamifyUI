@@ -1,4 +1,4 @@
-package com.kienct.gamifyui.ui.best_offer_games
+package com.kienct.gamifyui.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,7 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kienct.gamifyui.R
+import com.kienct.gamifyui.ui.model.BestOfferGame
 
 class BestOfferGamesAdapter(private val bestOfferGame: MutableList<BestOfferGame>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {

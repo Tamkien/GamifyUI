@@ -1,4 +1,4 @@
-package com.kienct.gamifyui.ui.best_offer_games
+package com.kienct.gamifyui.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kienct.gamifyui.R
+import com.kienct.gamifyui.ui.model.BestOfferGame
+import com.kienct.gamifyui.ui.adapters.BestOfferGamesAdapter
 
 class BestOfferGamesFragment : Fragment() {
 

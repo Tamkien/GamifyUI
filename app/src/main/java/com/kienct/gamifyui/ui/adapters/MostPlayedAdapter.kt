@@ -1,33 +1,30 @@
-package com.kienct.gamifyui.ui.home
+package com.kienct.gamifyui.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kienct.gamifyui.R
 
-class ShotcutAdapter(private val items: MutableList<Shortcut>) :
+class MostPlayedAdapter(private val mostPlayed: MutableList<Int>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val v =
-            LayoutInflater.from(parent.context).inflate(R.layout.shortcut_layout, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.most_played_view, parent, false)
         return ViewHolder(v)
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val item = items[position]
-        (holder as ViewHolder).img.setImageResource(item.imgSrc)
-        holder.name.text = (item.desc)
+        val game = mostPlayed[position]
+        (holder as ViewHolder).img.setImageResource(game)
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return mostPlayed.size
     }
 
     internal class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
-        var img: ImageView = v.findViewById(R.id.imageView15)
-        var name: TextView = v.findViewById(R.id.textView27)
+        var img: ImageView = v.findViewById(R.id.imageView12)
     }
 }

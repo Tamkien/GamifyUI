@@ -1,4 +1,4 @@
-package com.kienct.gamifyui.ui.home
+package com.kienct.gamifyui.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kienct.gamifyui.R
+import com.kienct.gamifyui.ui.adapters.SecondRowAdapter
+import com.kienct.gamifyui.ui.adapters.ShotcutAdapter
+import com.kienct.gamifyui.ui.adapters.SlideAdapter
+import com.kienct.gamifyui.ui.adapters.SmallBannerAdapter
+import com.kienct.gamifyui.ui.model.Shortcut
+import com.kienct.gamifyui.ui.model.SliderModel
 
 
 class HomeFragment : Fragment() {

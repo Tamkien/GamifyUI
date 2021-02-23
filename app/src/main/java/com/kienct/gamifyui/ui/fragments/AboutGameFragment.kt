@@ -1,4 +1,4 @@
-package com.kienct.gamifyui.ui.snapshot
+package com.kienct.gamifyui.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kienct.gamifyui.R
-import com.kienct.gamifyui.ui.most_played.MostPlayedAdapter
+import com.kienct.gamifyui.ui.adapters.MostPlayedAdapter
 
-class AboutGameFragment : Fragment() {
+class AboutGameFragment : Fragment() {//to be implemented
 
     private lateinit var view1: RecyclerView
     private val snapshots: MutableList<Int> = ArrayList()
