@@ -22,8 +22,8 @@ class Home : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)//to put the hamburger menu icon into the toolbar
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout) //the drawer's layout. Style goes here.
-        val navView: NavigationView = findViewById(R.id.nav_view) //this is the navigation drawer.
+        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout) //the drawer's layout.
+        val navView: NavigationView = findViewById(R.id.nav_view) //this is the navigation drawer. Style goes here.
         val navController = findNavController(R.id.nav_host_fragment) //this controller connects to mobile_navigation, which contains menu items
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
